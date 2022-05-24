@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.ts"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/UJ528491/nomadcoffee-backend/issues"
   },
-  "homepage": "https://github.com/UJ528491/nomadcoffee-backend#readme"
+  "homepage": "https://github.com/UJ528491/nomadcoffee-backend#readme",
+  "dependencies": {
+    "apollo-server": "^3.8.1",
+    "graphql": "^16.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "prisma": "^3.14.0",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.6.4"
+  }
 }
