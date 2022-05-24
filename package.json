@@ -1,5 +1,5 @@
 {
-  "name": "instagram-clone-Challenge",
+  "name": "instaclone-challenge",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,10 +18,14 @@
   },
   "homepage": "https://github.com/UJ528491/nomadcoffee-backend#readme",
   "dependencies": {
+    "@graphql-tools/load-files": "^6.5.3",
+    "@prisma/client": "^3.14.0",
     "apollo-server": "^3.8.1",
+    "dotenv": "^16.0.1",
     "graphql": "^16.5.0"
   },
   "devDependencies": {
+    "@types/node": "^17.0.35",
     "nodemon": "^2.0.16",
     "prisma": "^3.14.0",
     "ts-node": "^10.8.0",
