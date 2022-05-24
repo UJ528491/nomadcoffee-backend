@@ -1,0 +1,20 @@
+{
+  "name": "instagram-clone-Challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UJ528491/nomadcoffee-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UJ528491/nomadcoffee-backend/issues"
+  },
+  "homepage": "https://github.com/UJ528491/nomadcoffee-backend#readme"
+}
