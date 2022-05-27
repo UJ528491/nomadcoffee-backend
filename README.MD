@@ -17,3 +17,13 @@
 - After you are done, make a createAccount resolver.createAccount should: Create
   a user Hash the password Check that the username / email aren't taken Return
   ok:true or ok:false, error:$error if there is an error.
+
+### Day 3
+
+- editProfile: Change the user's profile, this includes changing password and
+  changing the avatarURL.
+- login: Log the user in by returning a JWT or return an error in case the
+  password is wrong.
+- seeProfile: See any users profile.
+- You will also have to write some code to protect your resolvers and inject the
+  logged in user to the resolver's context.
