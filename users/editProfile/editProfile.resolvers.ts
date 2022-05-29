@@ -3,6 +3,7 @@ import client from "../../client";
 import { protectedResolver } from "../utils/users.protectedResolver";
 import { User } from "@prisma/client";
 import { createWriteStream } from "fs";
+const GraphQLUpload = require("graphql-upload/GraphQLUpload.js");
 
 const editProfile = async (
   _: any,
@@ -21,7 +22,7 @@ const editProfile = async (
     const writeStream = createWriteStream(
       process.cwd() + "/uploads/" + newFilename
     );
-    readStream.pipe(writeStream);
+    await readStream.pipe(writeStream);
     newAvatarURL = `http://localhost:4000/static/${newFilename}`;
   }
   // check if loggedin user is the same as the user that is trying to edit
@@ -50,6 +51,7 @@ const editProfile = async (
 };
 
 export default {
+  Upload: GraphQLUpload,
   Mutation: {
     editProfile: protectedResolver(editProfile),
   },
