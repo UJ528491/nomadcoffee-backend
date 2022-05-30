@@ -15,7 +15,7 @@ const varifyToken = (token: string) => {
 
 export const getUser = async (tokenUser: any) => {
   try {
-    const { id }: any = await varifyToken(tokenUser.token);
+    const { id }: any = await varifyToken(tokenUser);
     const user = await client.user.findUnique({
       where: {
         id,
