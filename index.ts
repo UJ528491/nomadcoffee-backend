@@ -1,5 +1,5 @@
 require("dotenv").config();
-const express = require("express");
+import express from "express";
 import http from "http";
 import logger from "morgan";
 const graphqlUploadExpress = require("graphql-upload/graphqlUploadExpress.js");
@@ -25,7 +25,7 @@ async function startServer() {
       ApolloServerPluginDrainHttpServer({ httpServer }),
       ApolloServerPluginLandingPageGraphQLPlayground(),
     ],
-    context: async ({ req }: any) => {
+    context: async (req: express.Request) => {
       const token = await req.headers.authorization;
       const loggedInUser = await getUser(token);
       return { loggedInUser };

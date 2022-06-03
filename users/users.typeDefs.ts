@@ -18,5 +18,6 @@ export default gql`
     totalFollowing: Int!
     isFollowing: Boolean!
     isMe: Boolean!
+    shops: [CoffeeShop]
   }
 `;
